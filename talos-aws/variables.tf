@@ -1,7 +1,7 @@
-variable "name" {
-  description = "Project name, required to create unique resource names"
-  type        = string
-  default     = "talos-aws-example"
+variable "cluster_name" {
+  default = "aws-talos-example"
+  description = "The name of the cluster"
+  type = string
 }
 
 variable "cluster_architecture" {
@@ -94,4 +94,9 @@ variable "tags" {
     Name        = "talos"
     Environment = "Develop"
   }
+}
+
+variable "region" {
+  description = "The AWS region to deploy resources"
+  type        = string
 }
