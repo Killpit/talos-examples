@@ -95,3 +95,8 @@ variable "config_patch_files" {
   type = list(string)
   default = []
 }
+
+variable "region" {
+  description = "The AWS region to deploy resources in"
+  type        = string
+}
